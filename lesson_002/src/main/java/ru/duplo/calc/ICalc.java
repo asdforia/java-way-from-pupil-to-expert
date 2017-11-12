@@ -7,5 +7,5 @@ public interface ICalc {
     void mul(double first, double second);
     void div(double first, double second);
     void resetResult();
-    //void exp();
+    void exp(double first, int second);
 }

@@ -9,12 +9,12 @@ public class CalcExecute {
 
         calc.add(a, b);
         System.out.println(calc.getResult());
-        calc.resetResult();
 
+        calc.resetResult();
         calc.mul(b, d);
         System.out.println(calc.getResult());
-        calc.resetResult();
 
+        calc.resetResult();
         try {
             calc.div(b, c);
             System.out.println(calc.getResult());
@@ -24,8 +24,12 @@ public class CalcExecute {
             e.printStackTrace();
         }
 
+        calc.resetResult();
         calc.sub(b, a);
         System.out.println(calc.getResult());
+
         calc.resetResult();
+        calc.exp(225, 4);
+        System.out.println(calc.getResult());
     }
 }
