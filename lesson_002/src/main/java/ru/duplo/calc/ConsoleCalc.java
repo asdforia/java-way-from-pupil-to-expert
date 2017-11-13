@@ -1,5 +1,8 @@
 package ru.duplo.calc;
 
+/**
+ * Консольный калькулятор, операция и аргументы передаются в параметрах
+ */
 public class ConsoleCalc {
     public static void main(String[] args){
         final Calc calc = new Calc();
