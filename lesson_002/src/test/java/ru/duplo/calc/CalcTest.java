@@ -5,6 +5,17 @@ import org.junit.Test;
 import static org.junit.Assert.*;
 
 public class CalcTest {
+    @Test (expected = ArithmeticException.class)
+    public void divExceptionByZero() throws ArithmeticException {
+        //assign block
+        double first = 30;
+        double second = 0;
+        double expected = 0.5;
+        Calc calc = new Calc();
+
+        //act block
+        calc.div(first, second);
+    }
 
     @Test
     public void add() throws Exception {
