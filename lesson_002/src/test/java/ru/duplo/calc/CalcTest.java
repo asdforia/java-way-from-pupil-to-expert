@@ -10,7 +10,6 @@ public class CalcTest {
         //assign block
         double first = 30;
         double second = 0;
-        double expected = 0.5;
         Calc calc = new Calc();
 
         //act block
