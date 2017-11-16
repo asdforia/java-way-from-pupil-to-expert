@@ -2,8 +2,17 @@ package ru.duplo.calc;
 
 public class CalcExecute {
 
-    public static void main(String[] args){
-        double a = 25, b = 18, c = 0, d = -225;
+    private final Calc calc;
+    private final double[] argus;
+
+    private CalcExecute(final Calc calc, final double[] args){
+        this.calc = calc;
+        this.argus = args;
+    }
+
+    private void start(){
+        double argus [] = this.argus;
+        double a = argus[0], b = argus[1], c = argus[2], d = argus[3];
 
         Calc calc = new Calc();
 
@@ -31,5 +40,10 @@ public class CalcExecute {
         calc.resetResult();
         calc.exp(225, 4);
         System.out.println(calc.getResult());
+    }
+
+    public static void main(String[] args){
+        double[] argus = {2.15, 3.16, 0, -2.25};
+        new CalcExecute(new Calc(), argus).start();
     }
 }
