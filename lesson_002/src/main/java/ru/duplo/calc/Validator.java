@@ -1,15 +1,9 @@
 package ru.duplo.calc;
 
 import java.io.Closeable;
-import java.io.IOException;
-import java.util.Collection;
-
-import org.slf4j.Logger;
-import org.slf4j.LoggerFactory;
 
 public class Validator implements Closeable {
 
-    private static final Logger LOG = LoggerFactory.getLogger(Validator.class);
     private final IO io;
 
     public Validator(final IO io) {
