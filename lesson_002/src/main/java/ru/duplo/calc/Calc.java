@@ -72,7 +72,7 @@ public class Calc implements ICalc {
      * @param first base
      * @param second exponent
      */
-    public void exp(double first, int second) {
+    public void exp(double first, double second) {
         double temp = first;
         for(int i = 1; i < second; i++){
             temp *= first;

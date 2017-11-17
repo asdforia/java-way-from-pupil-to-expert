@@ -11,6 +11,11 @@
 	<name>Java Learning Project</name>
 	<url>https://github.com/asdforia/java-way-from-pupil-to-expert</url>
 
+	<properties>
+		<maven.compiler.source>1.8</maven.compiler.source>
+		<maven.compiler.target>1.8</maven.compiler.target>
+	</properties>
+
 	<modules>
         <module>lesson_001</module>
         <module>lesson_002</module>
@@ -23,6 +28,17 @@
 			<version>4.11</version>
 			<scope>test</scope>
 		</dependency>
+		<dependency>
+			<groupId>org.slf4j</groupId>
+			<artifactId>slf4j-api</artifactId>
+			<version>1.7.21</version>
+		</dependency>
+		<dependency>
+			<groupId>org.slf4j</groupId>
+			<artifactId>slf4j-log4j12</artifactId>
+			<version>1.7.21</version>
+		</dependency>
+
 	</dependencies>
 
 </project>

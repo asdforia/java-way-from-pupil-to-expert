@@ -48,5 +48,5 @@ public interface ICalc {
      * @param first base
      * @param second exponent
      */
-    void exp(double first, int second);
+    void exp(double first, double second);
 }
