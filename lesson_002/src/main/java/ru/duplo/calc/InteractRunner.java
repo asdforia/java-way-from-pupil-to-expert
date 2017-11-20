@@ -2,6 +2,12 @@ package ru.duplo.calc;
 
 import java.util.Scanner;
 
+/**
+ * Класс для интерактивного калькулятора в консоли
+ * @author asdforia
+ * @since 2017.11.20
+ * @version 1.0
+ */
 public class InteractRunner {
     private final Calc calc;
     private final IO io;
