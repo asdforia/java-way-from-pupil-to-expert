@@ -19,7 +19,8 @@
 	<modules>
         <module>lesson_001</module>
         <module>lesson_002</module>
-	</modules>
+        <module>lesson_008</module>
+    </modules>
 	
 	<dependencies>
 		<dependency>
