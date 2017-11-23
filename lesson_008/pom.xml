@@ -10,6 +10,13 @@
     <modelVersion>4.0.0</modelVersion>
 
     <artifactId>lesson_008</artifactId>
+    <dependencies>
+        <dependency>
+            <groupId>JavaWayFromPupilToExpert</groupId>
+            <artifactId>lesson_002</artifactId>
+            <version>1.0</version>
+        </dependency>
+    </dependencies>
 
 
 </project>

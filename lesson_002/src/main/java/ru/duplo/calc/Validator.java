@@ -1,6 +1,7 @@
 package ru.duplo.calc;
 
 import java.io.Closeable;
+import java.util.Collection;
 
 /**
  * Класс декоратор
@@ -32,6 +33,39 @@ public class Validator implements Closeable {
             } catch (NumberFormatException e) {
                 invalid = true;
                 this.io.println("Error read of number, Please enter new one. For example: 4 or 2.15 or -7.622");
+            }
+        } while (invalid);
+        throw new UnsupportedOperationException();
+    }
+
+    public int getInt(String message) {
+        boolean invalid = false;
+        do {
+            try {
+                this.io.println(message);
+                return Integer.valueOf(this.io.read());
+            } catch (NumberFormatException e) {
+                invalid = true;
+                this.io.println("Error read of integer, please enter new one.");
+            }
+        } while (invalid);
+        throw new UnsupportedOperationException();
+    }
+
+    public int getIntFromList(final String message, final Collection<Integer> keys) {
+        boolean invalid = false;
+        do {
+            try {
+                this.io.println(message);
+                final int result = Integer.valueOf(this.io.read());
+                if (keys.contains(result)) {
+                    return result;
+                } else {
+                    throw new NumberFormatException();
+                }
+            } catch (NumberFormatException e) {
+                invalid = true;
+                this.io.println("Error read of integer, please enter new one.");
             }
         } while (invalid);
         throw new UnsupportedOperationException();
