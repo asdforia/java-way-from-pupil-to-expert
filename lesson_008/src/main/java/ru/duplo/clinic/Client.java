@@ -1,11 +1,12 @@
 package ru.duplo.clinic;
 
+import java.util.ArrayList;
 import java.util.List;
 
 public class Client {
     private int id;
     private String name;
-    private List<Pet> pets;
+    private List<Pet> pets = new ArrayList<>();
 
 
     public int getId() {
